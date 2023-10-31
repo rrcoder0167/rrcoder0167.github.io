@@ -4,87 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riddhiman Rana - Developer Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-        header p {
-            font-size: 18px;
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        #theme-selector {
-            margin-top: 20px;
-        }
-        .profile-img {
-            max-width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-        .projects {
-            margin-top: 20px;
-        }
-        .project-btn {
-            display: block;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .project-btn:hover {
-            background-color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="profile-img" src="https://avatars.githubusercontent.com/u/106852975?v=4" alt="Profile Picture">
-        <h1>Riddhiman Rana</h1>
-        <p>@rrcoder0167</p>
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/106852975?v=4" alt="Riddhiman Rana">
+            <h1>Riddhiman Rana</h1>
+            <p>Full Stack Developer</p>
+        </div>
     </header>
-    <div class="container">
-        <div id="theme-selector">
-            <label for="theme">Select a Catpuccino Theme:</label>
-            <select id="theme">
-                <option value="theme1">Theme 1</option>
-                <option value="theme2">Theme 2</option>
-                <option value="theme3">Theme 3</option>
-            </select>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your introduction or brief bio can go here.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of the project.</p>
+            <a href="https://github.com/rrcoder0167/project1" class="btn">View on GitHub</a>
         </div>
-        <div class="about-me">
-            <h2>About Me</h2>
-            <p>This is where you can add some information about yourself and your skills. You can provide details about your background, experience, and any other relevant information.</p>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of the project.</p>
+            <a href="https://github.com/rrcoder0167/project2" class="btn">View on GitHub</a>
         </div>
-        <div class="projects">
-            <h2>My Projects</h2>
-            <a class="project-btn" href="LINK_TO_YOUR_GITHUB_REPO_1" target="_blank">Project 1</a>
-            <a class="project-btn" href="LINK_TO_YOUR_GITHUB_REPO_2" target="_blank">Project 2</a>
-            <a class="project-btn" href="LINK_TO_YOUR_GITHUB_REPO_3" target="_blank">Project 3</a>
-        </div>
-    </div>
+        <!-- Add more project sections as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me on Discord: @rrplayzlife</p>
+    </section>
 </body>
 </html>

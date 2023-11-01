@@ -1,21 +1,24 @@
 // Add this JavaScript file to your project folder and link it in your HTML files.
 
-// Add an event listener to handle navigation clicks
-document.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-        e.preventDefault();
-        const href = e.target.getAttribute('href');
-        loadPage(href);
-    }
-});
-
-// Function to load the content of the selected page
-function loadPage(pageUrl) {
-    fetch(pageUrl)
-        .then(response => response.text())
-        .then(data => {
-            document.body.innerHTML = data;
-            // You can also update the navigation menu to indicate the current page
-        })
-        .catch(error => console.error('Page could not be loaded: ', error));
+// Function to determine the current page URL
+function getCurrentPageUrl() {
+    return window.location.href.split('/').pop();
 }
+
+// Function to update the active link in the navigation
+function updateActiveLink() {
+    const currentPageUrl = getCurrentPageUrl();
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        const linkUrl = link.getAttribute('href');
+        if (currentPageUrl === linkUrl) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+// Call the function to update the active link when the page loads
+updateActiveLink();

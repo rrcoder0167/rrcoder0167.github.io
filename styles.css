@@ -6,13 +6,15 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    color: var(--ctp-mocha-text);
+    background: var(--ctp-frappe-base);
 }
 
 header {
     text-align: center;
-    background-color: #222;
-    color: #fff;
     padding: 40px 0;
+    background-color: var(--ctp-frappe-base);
+    color: var(--ctp-mocha-text);
 }
 
 .profile img {
@@ -25,14 +27,14 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: var(--ctp-frappe-base);
     padding: 10px 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
     padding: 10px 20px;
+    color: var(--ctp-mocha-text);
 }
 
 section {
@@ -40,21 +42,24 @@ section {
 }
 
 .project {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 20px;
+    width: 500px;
     margin: 20px 0;
+    border-radius: 6px;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: var(--ctp-mocha-text);
+    color: var(--ctp-frappe-base);
     text-decoration: none;
     margin-top: 10px;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: var(--ctp-frappe-text);
 }
+
